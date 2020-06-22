@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <!--Text temperatura-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:text="Conversor de Temperatura"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <!--Text Celsius-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:text="Celsius"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <!--Edit para digitar a temperatura-->
+    <EditText
+        android:id="@+id/editCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:width="60dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:maxLength="5"/>
+
+    <!--Botão para converter a temperatura-->
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="Converter Temperatura" />
+
+    <!--Text de mensagem para caso o usuario não digite o campo celsius. -->
+    <TextView
+        android:id="@+id/tvMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:text="Mensagem" />
+</LinearLayout>
